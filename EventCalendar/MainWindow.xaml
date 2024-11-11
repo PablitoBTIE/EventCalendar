@@ -36,6 +36,7 @@
                 <ComboBoxItem Content="Wszystkie" />
                 <ComboBoxItem Content="Ważne" />
                 <ComboBoxItem Content="Nieważne" />
+                
             </ComboBox>
         </StackPanel>
     </Grid>
