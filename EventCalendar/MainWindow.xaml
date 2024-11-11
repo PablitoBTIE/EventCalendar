@@ -14,8 +14,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-
-        <!-- TextBox and ComboBox -->
+        
         <TextBox x:Name="eventNameTextBox" Grid.Row="0" Grid.Column="0" Margin="10" Width="180" Height="30"
                  Background="AliceBlue" BorderBrush="CornflowerBlue" BorderThickness="1" 
                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
@@ -31,8 +30,7 @@
             <ComboBoxItem Content="Sobota" />
             <ComboBoxItem Content="Niedziela" />
         </ComboBox>
-
-        <!-- CheckBox and Button -->
+        
         <CheckBox x:Name="importantCheckBox" Grid.Row="1" Grid.Column="0" Margin="10" 
                   Content="Ważne wydarzenie" HorizontalAlignment="Right" VerticalAlignment="Center" 
                   Foreground="DarkBlue"/>
@@ -40,13 +38,11 @@
         <Button x:Name="addEventButton" Grid.Row="1" Grid.Column="1" Margin="10" Content="Dodaj wydarzenie" 
                 Width="160" Height="30" Background="SteelBlue" Foreground="White" FontWeight="Bold"
                 HorizontalAlignment="Left" VerticalAlignment="Center" Click="OnAddEventClick" />
-
-        <!-- ListBox -->
+        
         <ListBox Background="LavenderBlush" x:Name="eventsListBox" Grid.Row="2" Grid.ColumnSpan="2" 
                  Margin="10" Height="180" Width="400" BorderBrush="CornflowerBlue" BorderThickness="1"
                  HorizontalAlignment="Center" VerticalAlignment="Top" DisplayMemberPath="EventDetails"/>
-
-        <!-- StackPanel with Button and ComboBox for filters -->
+        
         <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10">
             <Button Content="Wyświetl szczegóły" Margin="5" Width="160" Height="30" 
                     Background="MediumSlateBlue" Foreground="White" FontWeight="Bold" Click="OnViewDetailsClick" />
